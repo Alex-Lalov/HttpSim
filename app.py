@@ -18,7 +18,7 @@ class App:
     setup_routes(self)
         sets up both the authentication server and the resource API
     run(self)
-        starts the erver of port 5000
+        starts the server on port 5000
     """
     def __init__(self):
         self.users = [Client("7124", "some1"), Client("user152", "word085"), Client("0123456", "pass123")]
