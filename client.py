@@ -1,4 +1,21 @@
 class Client:
+    """
+    A class to create clients
+
+    Attributes
+    ----------
+    id : str
+        a string containing the id/name of a client
+    password : str
+        the pass or secret that is used
+
+    Methods
+    -------
+    __eq__(self, other)
+        Overloads the equivelance of the class
+    getClientData(self)
+        Returns client json data
+    """
     def __init__(self, id : str, password : str):
         # Client's authentication data
         self.__client_data = {

@@ -3,6 +3,23 @@ from client import Client
 import datetime, random
 
 class App:
+    """
+    A class to start the app
+
+    Attributes
+    ----------
+    users : List[Client]
+        a list of clients that are in the database
+    tokens : List[(int, datetime)]
+        a list of tokens and the time they were initialized
+
+    Methods
+    -------
+    setup_routes(self)
+        sets up both the authentication server and the resource API
+    run(self)
+        starts the erver of port 5000
+    """
     def __init__(self):
         self.users = [Client("7124", "some1"), Client("user152", "word085"), Client("0123456", "pass123")]
         self.tokens = []
